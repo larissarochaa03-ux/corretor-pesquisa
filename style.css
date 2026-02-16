@@ -287,15 +287,61 @@ button[type="submit"].loading::after {
 
 /* Responsive */
 @media (max-width: 640px) {
+    body {
+        padding: 1rem 0.5rem; /* Less padding on body edges */
+        align-items: flex-start; /* Allow scrolling from top */
+    }
+
     .container {
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
+        border-radius: 16px;
+        margin-top: 1rem; /* Space from top */
+    }
+
+    header {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
     }
 
     header h1 {
-        font-size: 1.8rem;
+        font-size: 1.75rem; /* Smaller title */
+        line-height: 1.2;
+    }
+    
+    header p {
+        font-size: 1rem;
     }
 
+    .form-group {
+        margin-bottom: 2rem;
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    /* Stack options vertically on mobile for better touch targets */
     .options-grid {
         grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .option-content {
+        padding: 1rem;
+        font-size: 1rem;
+        justify-content: flex-start; /* Align text left on mobile */
+        text-align: left;
+    }
+    
+    /* Ensure inputs are at least 16px to prevent iOS zoom */
+    input[type="text"],
+    textarea {
+        font-size: 16px; 
+    }
+
+    /* Make button easier to tap */
+    button[type="submit"] {
+        padding: 1.2rem;
+        font-size: 1.1rem;
     }
 }
