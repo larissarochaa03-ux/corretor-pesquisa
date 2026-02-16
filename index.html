@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Corretor de Imóveis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Perfil do Corretor</h1>
+            <p>Vamos construir sua estratégia digital personalizada.</p>
+        </header>
+
+        <form id="corretorForm">
+            <!-- 1. Nome -->
+            <div class="form-group slide-in">
+                <label for="nome">1. Qual seu nome?</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <!-- 2. Perfil Pessoal -->
+            <div class="form-group slide-in">
+                <label>2. Você se considera mais:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="perfil" value="Técnico e analítico" required>
+                        <span class="option-content">
+                            <span class="option-title">Técnico e analítico</span>
+                        </span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="perfil" value="Comunicativo e expansivo">
+                        <span class="option-content">
+                             <span class="option-title">Comunicativo e expansivo</span>
+                        </span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="perfil" value="Estratégico e discreto">
+                        <span class="option-content">
+                             <span class="option-title">Estratégico e discreto</span>
+                        </span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="perfil" value="Inspirador e emocional">
+                        <span class="option-content">
+                             <span class="option-title">Inspirador e emocional</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 3. Preferência de Trabalho -->
+            <div class="form-group slide-in">
+                <label>3. Você gosta mais de:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="preferencia" value="Negociar" required>
+                        <span class="option-content">Negociar</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="preferencia" value="Atender e ouvir">
+                        <span class="option-content">Atender e ouvir</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="preferencia" value="Prospectar">
+                        <span class="option-content">Prospectar</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="preferencia" value="Explicar detalhes técnicos">
+                        <span class="option-content">Explicar detalhes técnicos</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 4. Aparição -->
+            <div class="form-group slide-in">
+                <label>4. Você prefere aparecer:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="aparicao" value="Falando direto para a câmera" required>
+                        <span class="option-content">Falando direto para a câmera</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="aparicao" value="Mostrando imóveis">
+                        <span class="option-content">Mostrando imóveis</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="aparicao" value="Em bastidores">
+                        <span class="option-content">Em bastidores</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="aparicao" value="Em fotos mais institucionais">
+                        <span class="option-content">Em fotos mais institucionais</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 5. Diferencial -->
+            <div class="form-group slide-in">
+                <label for="diferencial">5. Seu diferencial como corretor é:</label>
+                <textarea id="diferencial" name="diferencial" placeholder="Descreva seu principal diferencial..." required></textarea>
+            </div>
+
+            <!-- 6. Elogios -->
+            <div class="form-group slide-in">
+                <label for="elogios">6. O que seus clientes mais elogiam em você?</label>
+                <textarea id="elogios" name="elogios" placeholder="Ex: Pontualidade, clareza, honestidade..." required></textarea>
+            </div>
+
+            <!-- 7. Tipo de Imóvel -->
+            <div class="form-group slide-in">
+                <label>7. Qual tipo de imóvel você quer vender com mais frequência?</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="tipo_imovel" value="Popular / Minha Casa Minha Vida" required>
+                        <span class="option-content">Popular / MCMV</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="tipo_imovel" value="Médio padrão">
+                        <span class="option-content">Médio padrão</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="tipo_imovel" value="Alto padrão">
+                        <span class="option-content">Alto padrão</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="tipo_imovel" value="Lotes / terrenos">
+                        <span class="option-content">Lotes / terrenos</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="tipo_imovel" value="Comercial">
+                        <span class="option-content">Comercial</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 8. Público Principal -->
+            <div class="form-group slide-in">
+                <label>8. Seu público principal é:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="publico" value="Primeira compra" required>
+                        <span class="option-content">Primeira compra</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="publico" value="Investidores">
+                        <span class="option-content">Investidores</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="publico" value="Famílias">
+                        <span class="option-content">Famílias</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="publico" value="Empresários">
+                        <span class="option-content">Empresários</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="publico" value="Pessoas que querem sair do aluguel">
+                        <span class="option-content">Sair do aluguel</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 9. Imagem Desejada -->
+            <div class="form-group slide-in">
+                <label>9. Você quer ser visto como:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="imagem" value="Especialista técnico" required>
+                        <span class="option-content">Especialista técnico</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="imagem" value="Corretor de confiança">
+                        <span class="option-content">Corretor de confiança</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="imagem" value="Amigo/conselheiro">
+                        <span class="option-content">Amigo/conselheiro</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="imagem" value="Autoridade no mercado">
+                        <span class="option-content">Autoridade no mercado</span>
+                    </label>
+                     <label class="option-card">
+                        <input type="radio" name="imagem" value="Corretor de luxo">
+                        <span class="option-content">Corretor de luxo</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 10. Vídeos -->
+            <div class="form-group slide-in">
+                <label>10. Você se sente confortável gravando vídeos?</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="conforto_video" value="Sim" required>
+                        <span class="option-content">Sim</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="conforto_video" value="Mais ou menos">
+                        <span class="option-content">Mais ou menos</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="conforto_video" value="Não">
+                        <span class="option-content">Não</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 11. Conteúdo Preferido -->
+            <div class="form-group slide-in">
+                <label>11. Você prefere um conteúdo:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="conteudo" value="Educativo" required>
+                        <span class="option-content">Educativo</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="conteudo" value="Motivacional">
+                        <span class="option-content">Motivacional</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="conteudo" value="Direto para venda">
+                        <span class="option-content">Direto para venda</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="conteudo" value="Bastidores do dia a dia">
+                        <span class="option-content">Bastidores</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="conteudo" value="Lifestyle">
+                        <span class="option-content">Lifestyle</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 12. Estado do Instagram -->
+            <div class="form-group slide-in">
+                <label>12. Seu Instagram hoje está mais:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="instagram_estado" value="Parado" required>
+                        <span class="option-content">Parado</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="instagram_estado" value="Muito vendedor">
+                        <span class="option-content">Muito vendedor</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="instagram_estado" value="Confuso">
+                        <span class="option-content">Confuso</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="instagram_estado" value="Sem posicionamento">
+                        <span class="option-content">Sem posicionamento</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 13. Meta Instagram -->
+            <div class="form-group slide-in">
+                <label>13. Sua meta principal com o Instagram é:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="meta_instagram" value="Gerar leads" required>
+                        <span class="option-content">Gerar leads</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="meta_instagram" value="Vender direto">
+                        <span class="option-content">Vender direto</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="meta_instagram" value="Construir autoridade">
+                        <span class="option-content">Construir autoridade</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="meta_instagram" value="Fortalecer marca pessoal">
+                        <span class="option-content">Fortalecer marca pessoal</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 14. Foco de Trabalho -->
+            <div class="form-group slide-in">
+                <label>14. Você quer trabalhar mais:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="foco_trabalho" value="Stories" required>
+                        <span class="option-content">Stories</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="foco_trabalho" value="Reels">
+                        <span class="option-content">Reels</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="foco_trabalho" value="Feed estratégico">
+                        <span class="option-content">Feed estratégico</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="foco_trabalho" value="Todos">
+                        <span class="option-content">Todos</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 15. Frequência de Gravação -->
+            <div class="form-group slide-in">
+                <label>15. Está disposto a gravar quantas vezes por semana?</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="frequencia_gravacao" value="1" required>
+                        <span class="option-content">1</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="frequencia_gravacao" value="2–3">
+                        <span class="option-content">2 – 3</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="frequencia_gravacao" value="4 ou mais">
+                        <span class="option-content">4 ou mais</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 16. Marca em uma Palavra -->
+            <div class="form-group slide-in">
+                <label for="marca_palavra">16. Se sua marca fosse uma palavra, seria:</label>
+                <input type="text" id="marca_palavra" name="marca_palavra" placeholder="Ex: Transparência" required>
+            </div>
+
+            <!-- 17. Três Valores -->
+            <div class="form-group slide-in">
+                <label for="valores">17. Três valores que você quer transmitir:</label>
+                <input type="text" id="valores" name="valores" placeholder="Ex: Ética, Agilidade, Exclusividade" required>
+            </div>
+
+            <!-- 18. Estilo de Perfil -->
+            <div class="form-group slide-in">
+                <label>18. Você prefere um perfil:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="estilo_perfil" value="Formal" required>
+                        <span class="option-content">Formal</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="estilo_perfil" value="Moderno">
+                        <span class="option-content">Moderno</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="estilo_perfil" value="Sofisticado">
+                        <span class="option-content">Sofisticado</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="estilo_perfil" value="Popular">
+                        <span class="option-content">Popular</span>
+                    </label>
+                     <label class="option-card">
+                        <input type="radio" name="estilo_perfil" value="Descontraído">
+                        <span class="option-content">Descontraído</span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Enviar Respostas</button>
+        </form>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
