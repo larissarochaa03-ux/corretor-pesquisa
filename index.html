@@ -35,27 +35,19 @@
                 <div class="options-grid">
                     <label class="option-card">
                         <input type="radio" name="perfil" value="Técnico e analítico" required>
-                        <span class="option-content">
-                            <span class="option-title">Técnico e analítico</span>
-                        </span>
+                        <span class="option-content">Técnico e analítico</span>
                     </label>
                     <label class="option-card">
                         <input type="radio" name="perfil" value="Comunicativo e expansivo">
-                        <span class="option-content">
-                             <span class="option-title">Comunicativo e expansivo</span>
-                        </span>
+                        <span class="option-content">Comunicativo e expansivo</span>
                     </label>
                     <label class="option-card">
                         <input type="radio" name="perfil" value="Estratégico e discreto">
-                        <span class="option-content">
-                             <span class="option-title">Estratégico e discreto</span>
-                        </span>
+                        <span class="option-content">Estratégico e discreto</span>
                     </label>
                     <label class="option-card">
                         <input type="radio" name="perfil" value="Inspirador e emocional">
-                        <span class="option-content">
-                             <span class="option-title">Inspirador e emocional</span>
-                        </span>
+                        <span class="option-content">Inspirador e emocional</span>
                     </label>
                 </div>
             </div>
@@ -109,18 +101,49 @@
             <!-- 5. Diferencial -->
             <div class="form-group slide-in">
                 <label for="diferencial">5. Seu diferencial como corretor é:</label>
-                <textarea id="diferencial" name="diferencial" placeholder="Descreva seu principal diferencial..." required></textarea>
+                <textarea id="diferencial" name="diferencial" placeholder="Descreva seu diferencial..." required></textarea>
             </div>
 
-            <!-- 6. Elogios -->
+            <!-- 6. Inspiração -->
             <div class="form-group slide-in">
-                <label for="elogios">6. O que seus clientes mais elogiam em você?</label>
-                <textarea id="elogios" name="elogios" placeholder="Ex: Pontualidade, clareza, honestidade..." required></textarea>
+                <label for="inspiracao">6. Qual corretor ou criador de conteúdo do mercado imobiliário você mais se inspira no Instagram?</label>
+                <input type="text" id="inspiracao" name="inspiracao" placeholder="Nome do perfil ou corretor" required>
             </div>
 
-            <!-- 7. Tipo de Imóvel -->
+            <!-- 7. Admiração (Multipla Escolha) -->
             <div class="form-group slide-in">
-                <label>7. Qual tipo de imóvel você quer vender com mais frequência?</label>
+                <label>7. O que você mais admira nesse perfil? (Pode marcar mais de uma)</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="checkbox" name="admiracao" value="Autoridade">
+                        <span class="option-content">Autoridade</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="admiracao" value="Estética visual">
+                        <span class="option-content">Estética visual</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="admiracao" value="Forma de falar">
+                        <span class="option-content">Forma de falar</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="admiracao" value="Estratégia de vendas">
+                        <span class="option-content">Estratégia de vendas</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="admiracao" value="Frequência de postagem">
+                        <span class="option-content">Frequência de postagem</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="admiracao" value="Clareza nas explicações">
+                        <span class="option-content">Clareza nas explicações</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 8. Tipo de Imóvel -->
+            <div class="form-group slide-in">
+                <label>8. Qual tipo de imóvel você quer vender com mais frequência?</label>
                 <div class="options-grid">
                     <label class="option-card">
                         <input type="radio" name="tipo_imovel" value="Popular / Minha Casa Minha Vida" required>
@@ -145,9 +168,9 @@
                 </div>
             </div>
 
-            <!-- 8. Público Principal -->
+            <!-- 9. Público Principal -->
             <div class="form-group slide-in">
-                <label>8. Seu público principal é:</label>
+                <label>9. Seu público principal é:</label>
                 <div class="options-grid">
                     <label class="option-card">
                         <input type="radio" name="publico" value="Primeira compra" required>
@@ -172,9 +195,9 @@
                 </div>
             </div>
 
-            <!-- 9. Imagem Desejada -->
+            <!-- 10. Imagem Desejada -->
             <div class="form-group slide-in">
-                <label>9. Você quer ser visto como:</label>
+                <label>10. Você quer ser visto como:</label>
                 <div class="options-grid">
                     <label class="option-card">
                         <input type="radio" name="imagem" value="Especialista técnico" required>
@@ -199,28 +222,28 @@
                 </div>
             </div>
 
-            <!-- 10. Vídeos -->
+            <!-- 11. Estilo de Perfil -->
             <div class="form-group slide-in">
-                <label>10. Você se sente confortável gravando vídeos?</label>
+                <label>11. Você prefere um perfil que seja:</label>
                 <div class="options-grid">
                     <label class="option-card">
-                        <input type="radio" name="conforto_video" value="Sim" required>
-                        <span class="option-content">Sim</span>
+                        <input type="radio" name="estilo_perfil" value="Mais institucional" required>
+                        <span class="option-content">Mais institucional</span>
                     </label>
                     <label class="option-card">
-                        <input type="radio" name="conforto_video" value="Mais ou menos">
-                        <span class="option-content">Mais ou menos</span>
+                        <input type="radio" name="estilo_perfil" value="Mais pessoal">
+                        <span class="option-content">Mais pessoal</span>
                     </label>
                     <label class="option-card">
-                        <input type="radio" name="conforto_video" value="Não">
-                        <span class="option-content">Não</span>
+                        <input type="radio" name="estilo_perfil" value="Meio termo entre pessoal e profissional">
+                        <span class="option-content">Meio termo</span>
                     </label>
                 </div>
             </div>
 
-            <!-- 11. Conteúdo Preferido -->
+            <!-- 12. Conteúdo Preferido -->
             <div class="form-group slide-in">
-                <label>11. Você prefere um conteúdo:</label>
+                <label>12. Você prefere um conteúdo:</label>
                 <div class="options-grid">
                     <label class="option-card">
                         <input type="radio" name="conteudo" value="Educativo" required>
@@ -238,16 +261,16 @@
                         <input type="radio" name="conteudo" value="Bastidores do dia a dia">
                         <span class="option-content">Bastidores</span>
                     </label>
-                    <label class="option-card">
+                     <label class="option-card">
                         <input type="radio" name="conteudo" value="Lifestyle">
                         <span class="option-content">Lifestyle</span>
                     </label>
                 </div>
             </div>
 
-            <!-- 12. Estado do Instagram -->
+            <!-- 13. Estado do Instagram -->
             <div class="form-group slide-in">
-                <label>12. Seu Instagram hoje está mais:</label>
+                <label>13. Seu Instagram hoje está mais:</label>
                 <div class="options-grid">
                     <label class="option-card">
                         <input type="radio" name="instagram_estado" value="Parado" required>
@@ -268,9 +291,9 @@
                 </div>
             </div>
 
-            <!-- 13. Meta Instagram -->
+            <!-- 14. Meta Instagram -->
             <div class="form-group slide-in">
-                <label>13. Sua meta principal com o Instagram é:</label>
+                <label>14. Sua meta principal com o Instagram é:</label>
                 <div class="options-grid">
                     <label class="option-card">
                         <input type="radio" name="meta_instagram" value="Gerar leads" required>
@@ -291,32 +314,44 @@
                 </div>
             </div>
 
-            <!-- 14. Foco de Trabalho -->
+            <!-- 15. Tipos de Conteúdo (Multipla Escolha) -->
             <div class="form-group slide-in">
-                <label>14. Você quer trabalhar mais:</label>
+                <label>15. Quais tipos de conteúdos você quer postar com mais frequência? (Pode marcar mais de uma)</label>
                 <div class="options-grid">
                     <label class="option-card">
-                        <input type="radio" name="foco_trabalho" value="Stories" required>
-                        <span class="option-content">Stories</span>
+                        <input type="checkbox" name="tipos_conteudo" value="Apresentação de imóveis">
+                        <span class="option-content">Apresentação de imóveis</span>
                     </label>
                     <label class="option-card">
-                        <input type="radio" name="foco_trabalho" value="Reels">
-                        <span class="option-content">Reels</span>
+                        <input type="checkbox" name="tipos_conteudo" value="Conteúdo educativo sobre mercado">
+                        <span class="option-content">Conteúdo educativo</span>
                     </label>
                     <label class="option-card">
-                        <input type="radio" name="foco_trabalho" value="Feed estratégico">
-                        <span class="option-content">Feed estratégico</span>
+                        <input type="checkbox" name="tipos_conteudo" value="Conteúdo motivacional">
+                        <span class="option-content">Conteúdo motivacional</span>
                     </label>
                     <label class="option-card">
-                        <input type="radio" name="foco_trabalho" value="Todos">
-                        <span class="option-content">Todos</span>
+                        <input type="checkbox" name="tipos_conteudo" value="Bastidores do dia a dia">
+                        <span class="option-content">Bastidores do dia a dia</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="tipos_conteudo" value="Lifestyle (rotina, conquistas, viagens)">
+                        <span class="option-content">Lifestyle</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="tipos_conteudo" value="Conteúdo direto de venda">
+                        <span class="option-content">Conteúdo de venda</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="tipos_conteudo" value="Conteúdo estratégico para investidores">
+                        <span class="option-content">Para investidores</span>
                     </label>
                 </div>
             </div>
 
-            <!-- 15. Frequência de Gravação -->
+            <!-- 16. Frequência de Gravação -->
             <div class="form-group slide-in">
-                <label>15. Está disposto a gravar quantas vezes por semana?</label>
+                <label>16. Está disposto a gravar quantas vezes por semana?</label>
                 <div class="options-grid">
                     <label class="option-card">
                         <input type="radio" name="frequencia_gravacao" value="1" required>
@@ -333,43 +368,122 @@
                 </div>
             </div>
 
-            <!-- 16. Marca em uma Palavra -->
+            <!-- 17. Stories -->
             <div class="form-group slide-in">
-                <label for="marca_palavra">16. Se sua marca fosse uma palavra, seria:</label>
-                <input type="text" id="marca_palavra" name="marca_palavra" placeholder="Ex: Transparência" required>
-            </div>
-
-            <!-- 17. Três Valores -->
-            <div class="form-group slide-in">
-                <label for="valores">17. Três valores que você quer transmitir:</label>
-                <input type="text" id="valores" name="valores" placeholder="Ex: Ética, Agilidade, Exclusividade" required>
-            </div>
-
-            <!-- 18. Estilo de Perfil -->
-            <div class="form-group slide-in">
-                <label>18. Você prefere um perfil:</label>
+                <label>17. Você está disposto a aparecer nos stories todos os dias?</label>
                 <div class="options-grid">
                     <label class="option-card">
-                        <input type="radio" name="estilo_perfil" value="Formal" required>
-                        <span class="option-content">Formal</span>
+                        <input type="radio" name="stories_diarios" value="Sim" required>
+                        <span class="option-content">Sim</span>
                     </label>
                     <label class="option-card">
-                        <input type="radio" name="estilo_perfil" value="Moderno">
-                        <span class="option-content">Moderno</span>
+                        <input type="radio" name="stories_diarios" value="Apenas dias estratégicos">
+                        <span class="option-content">Apenas dias estratégicos</span>
                     </label>
                     <label class="option-card">
-                        <input type="radio" name="estilo_perfil" value="Sofisticado">
-                        <span class="option-content">Sofisticado</span>
-                    </label>
-                    <label class="option-card">
-                        <input type="radio" name="estilo_perfil" value="Popular">
-                        <span class="option-content">Popular</span>
-                    </label>
-                     <label class="option-card">
-                        <input type="radio" name="estilo_perfil" value="Descontraído">
-                        <span class="option-content">Descontraído</span>
+                        <input type="radio" name="stories_diarios" value="Prefiro menos exposição">
+                        <span class="option-content">Prefiro menos exposição</span>
                     </label>
                 </div>
+            </div>
+
+            <!-- 18. Uso dos Stories (Multipla Escolha) -->
+            <div class="form-group slide-in">
+                <label>18. Você quer usar mais nos stories: (Pode marcar mais de uma)</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="checkbox" name="uso_stories" value="Prova social (clientes, vendas)">
+                        <span class="option-content">Prova social</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="uso_stories" value="Enquetes e interação">
+                        <span class="option-content">Enquetes e interação</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="uso_stories" value="Explicações técnicas">
+                        <span class="option-content">Explicações técnicas</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="uso_stories" value="Mostruário de imóveis">
+                        <span class="option-content">Mostruário de imóveis</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="uso_stories" value="Vida pessoal">
+                        <span class="option-content">Vida pessoal</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 19. Três Valores -->
+            <div class="form-group slide-in">
+                <label for="valores">19. Três valores que você quer transmitir:</label>
+                <textarea id="valores" name="valores" placeholder="Ex: Ética, Agilidade, Exclusividade" required></textarea>
+            </div>
+
+            <!-- 20. Reconhecimento -->
+            <div class="form-group slide-in">
+                <label>20. Você quer ser reconhecido no Instagram como:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="reconhecimento" value="Especialista em um nicho específico" required>
+                        <span class="option-content">Especialista em nicho</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="reconhecimento" value="Corretor referência da cidade">
+                        <span class="option-content">Referência da cidade</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="reconhecimento" value="Corretor de alto padrão">
+                        <span class="option-content">Corretor de alto padrão</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="reconhecimento" value="Corretor popular de volume">
+                        <span class="option-content">Corretor popular</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="reconhecimento" value="Autoridade em investimentos">
+                        <span class="option-content">Autoridade em investimentos</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 21. Transmissão do Perfil -->
+            <div class="form-group slide-in">
+                <label>21. Você quer que seu perfil transmita mais:</label>
+                <div class="options-grid">
+                    <label class="option-card">
+                        <input type="radio" name="transmissao" value="Formalidade" required>
+                        <span class="option-content">Formalidade</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="transmissao" value="Modernidade">
+                        <span class="option-content">Modernidade</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="transmissao" value="Sofisticação">
+                        <span class="option-content">Sofisticação</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="transmissao" value="Popularidade">
+                        <span class="option-content">Popularidade</span>
+                    </label>
+                    <label class="option-card">
+                        <input type="radio" name="transmissao" value="Exclusividade">
+                        <span class="option-content">Exclusividade</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 22. O que NÃO parecer -->
+            <div class="form-group slide-in">
+                <label for="nao_parecer">22. O que você NÃO quer que seu Instagram pareça?</label>
+                <textarea id="nao_parecer" name="nao_parecer" placeholder="Descreva o que evitar..." required></textarea>
+            </div>
+
+            <!-- 23. Sensação -->
+            <div class="form-group slide-in">
+                <label for="sensacao">23. Se alguém entrar no seu perfil hoje, qual sensação você quer que ele tenha?</label>
+                <textarea id="sensacao" name="sensacao" placeholder="Descreva a sensação..." required></textarea>
             </div>
 
             <button type="submit" id="submitBtn">Enviar Respostas</button>

@@ -27,9 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = new FormData(form);
         const data = {};
         
-        // Handle normal inputs and radio buttons
+        // Handle inputs, including multiple checkboxes with same name
         for (const [key, value] of formData.entries()) {
-            data[key] = value;
+            if (data[key]) {
+                // If key already exists (multi-select checkboxes), append value
+                data[key] = data[key] + ', ' + value;
+            } else {
+                data[key] = value;
+            }
         }
 
         try {
