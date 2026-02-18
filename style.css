@@ -161,7 +161,8 @@ textarea {
     margin-bottom: 0;
 }
 
-.option-card input[type="radio"] {
+.option-card input[type="radio"],
+.option-card input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     width: 0;
@@ -189,7 +190,8 @@ textarea {
     transform: translateY(-2px);
 }
 
-.option-card input[type="radio"]:checked + .option-content {
+.option-card input[type="radio"]:checked + .option-content,
+.option-card input[type="checkbox"]:checked + .option-content {
     border-color: var(--primary-color);
     background: rgba(212, 175, 55, 0.15); /* Gold tint */
     color: var(--primary-color);
